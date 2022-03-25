@@ -8,7 +8,7 @@ namespace CSLight_07
         {
             int countOfPeople;
             int visitingTime = 10;
-            int hour = 60;
+            int minutesPerHour = 60;
             int waitingTime;
             int waitingMinute;
             int waitingHour;
@@ -18,8 +18,8 @@ namespace CSLight_07
             countOfPeople = Convert.ToInt32(Console.ReadLine());
 
             waitingTime = countOfPeople * visitingTime;
-            waitingHour = waitingTime / hour;
-            waitingMinute = waitingTime % hour;
+            waitingHour = waitingTime / minutesPerHour;
+            waitingMinute = waitingTime % minutesPerHour;
 
             Console.WriteLine();
             Console.WriteLine("Вы должны отстоять в очереди " + waitingHour + " часа " + waitingMinute + " минут.");
